@@ -8,7 +8,7 @@ import GifModal from '../components/GifModal'
 import SearchBar from '../components/SearchBar'
 import '../styles/app.css'
 
-class App extends React.Component {
+class Home extends React.Component {
     render = () => (
         <div>
             <SearchBar onTermChange={this.props.actions.requestGifs} />
@@ -31,4 +31,4 @@ const mapDispatchToProps = dispatch => ({
 });
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(App)
+export default connect(mapStateToProps, mapDispatchToProps)(Home)
